@@ -4,7 +4,7 @@ const esprima = require("esprima");
 const helpers = require("../helpers");
 
 describe("BookList.vue", () => {
-  it("should have a computer property that search for books results @search-input-produces-search-filter", () => {
+  it("should have a computed property that search for books results @search-input-produces-search-filter", () => {
     const file = helpers.readFile("src/components/BookList.vue");
     const nodes = helpers.parseFile(file);
     const script = helpers.getHtmlTag("script", nodes);
